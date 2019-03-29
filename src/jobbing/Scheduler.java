@@ -8,21 +8,26 @@ public class Scheduler {
 		
 	}
 	
-//	public void Job(int n)  {
-//		System.out.println("Tired");
-//		
-//		try {
-//			Thread.sleep(n);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		System.out.println("AWoKEN!");
-//	}
+	public void Job(int n)  {
+		System.out.println("Tired");
+		
+		try {
+			Thread.sleep(n);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("AWoKEN!");
+	}
 	
 	
-	public void method2(Object object, Method method) throws Exception {
-        
+	public void methodCaller(Object object, Method method, int time) throws Exception {
+		System.out.println("waiting ...");
+		try {
+			Thread.sleep(time);
+		}catch (InterruptedException e) {
+			e.printStackTrace();
+		}
         method.invoke(object);
     }
 

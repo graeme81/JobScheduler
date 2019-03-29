@@ -9,11 +9,12 @@ public class Methods {
 
 	public void Hello() {
 
-		System.out.println("Hello");
+		System.out.println("Hello, im here");
 	}
 	
-	public int Sum(int a, int b) {
-		return a+b;
+	public void Sum() {
+		//return a+b;
+		System.out.println(4+6);
 	}
 	
 	public Optional<String> Longest(String[] words) {

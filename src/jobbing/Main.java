@@ -8,20 +8,15 @@ public class Main {
 		Scheduler scheduler = new Scheduler();
 		Methods methods = new Methods();
 		
-		//scheduler.Job(2000);
+//		scheduler.Job(2000);
 		
 		Method method1 = Methods.class.getMethod("Hello");
+		Method method2 = Methods.class.getMethod("Sum");
 		
-		scheduler.method2(methods, method1);
+		scheduler.methodCaller(methods, method1, 5000);
+		scheduler.methodCaller(methods, method2, 1000);
 		
 		
-//		methods.Hello();
-//		
-//		String[] words = {"a", "AB", "ABC", "awefulAtThis", "GG"};
-//		System.out.println("Longest = " + methods.Longest(words).get());
-//		
-//		int a = 5, b = 10;
-//		System.out.println(a + " + " + b + " = " + methods.Sum(a, b));
 	}
 
 }
